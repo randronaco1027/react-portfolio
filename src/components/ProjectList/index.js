@@ -38,18 +38,21 @@ const PhotoList = ({ category }) => {
           alt="Gobbler"
           className="img-thumbnail mx-1"
           key="Gobbler"
+          style={{ width: "70%" }}
         />
         <img
           src={require(`../../assets/1.png`)}
           alt="Portfolio Manager"
           className="img-thumbnail mx-1"
           key="Portfolio Manager"
+          style={{ width: "70%" }}
         />
         <img
           src={require(`../../assets/2.png`)}
           alt="Weather Dashboard"
           className="img-thumbnail mx-1"
           key="Weather Dashboard"
+          style={{ width: "70%" }}
         />
       </div>
     </div>

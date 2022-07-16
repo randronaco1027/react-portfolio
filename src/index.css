@@ -21,6 +21,7 @@ main {
 }
 :root {
   --primary: #273bf0;
+  --secondary: #cf773b;
   --light: #fafafa;
   --dark: #000000;
   
@@ -282,7 +283,7 @@ textarea {
 }
 
 button {
-	background: var(--primary);
+	background: var(--secondary);
 	border: 0;
 	border-radius: 5px;
 	color: #fff;

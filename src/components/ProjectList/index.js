@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import Gobbler from '../../assets/gobbler.png'
 import Stocks from '../../assets/portfolio.png'
 import Weather from '../../assets/weather.png'
@@ -28,20 +28,21 @@ function Projects(props) {
     <div>
       <div className="flex-row">
         {projectlist.map((project) => (
-          <div>
-          <p>{project.name}</p>
-          <p>{project.github}</p>
-          <p>{project.application}</p>
-          <img
-            src={project.imageurl}
-            alt={project.name}
-            className="img-thumbnail mx-1"
-            key={project.name}
-          />
-          
+          <div className="container">
+            <img
+              src={project.imageurl}
+              alt={project.name}
+              className="img-thumbnail"
+              key={project.name}
+            />
+            <div className="overlay text">
+              <h1>{project.name}</h1>
+              <button href={project.github}>GitHub</button>
+              <button href={project.application}>Heroku</button>
+            </div>
           </div>
         ))}
-        
+
       </div>
     </div>
   );

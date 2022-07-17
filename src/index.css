@@ -189,59 +189,7 @@ textarea {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
-}
-
-.space-between {
   justify-content: space-between;
-}
-
-.flex-end {
-  justify-content: flex-end;
-}
-
-.mx-1 {
-  margin-right: var(--spacing-one);
-  margin-left: var(--spacing-one);
-}
-
-.mx-2 {
-  margin-right: var(--spacing-two);
-  margin-left: var(--spacing-two);
-}
-
-.my-1 {
-  margin-top: var(--spacing-one);
-  margin-bottom: var(--spacing-one);
-}
-
-.my-2 {
-  margin-top: var(--spacing-two);
-  margin-bottom: var(--spacing-two);
-}
-
-.my-5 {
-  margin-top: var(--spacing-five);
-  margin-bottom: var(--spacing-five);
-}
-
-.px-1 {
-  padding-right: var(--spacing-one);
-  padding-left: var(--spacing-one);
-}
-
-.px-2 {
-  padding-right: var(--spacing-two);
-  padding-left: var(--spacing-two);
-}
-
-.py-1 {
-  padding-top: var(--spacing-one);
-  padding-bottom: var(--spacing-one);
-}
-
-.py-2 {
-  padding-top: var(--spacing-two);
-  padding-bottom: var(--spacing-two);
 }
 
 .card {
@@ -253,10 +201,6 @@ textarea {
   width: 100%;
   height: 100%;
   cursor: pointer;
-}
-
-.img-thumbnail:hover {
-  background-color: white;
 }
 
 .hoverText {
@@ -272,6 +216,30 @@ textarea {
   width: 40%;
   margin: 2%;
   
+}
+
+.header {
+  padding: 5%;
+}
+
+.title {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 80%;
+  }
+  .flex-row {
+    justify-content: space-around;
+    padding: 0;
+  }
+  .mx-2 {
+    margin: 5%;
+  }
+  .overlay {
+    padding-top: 0%;
+  }
 }
 
 .overlay {
@@ -304,8 +272,6 @@ textarea {
   text-align: center;
   vertical-align: center;
 }
-
-
 
 button {
 	background: var(--secondary);

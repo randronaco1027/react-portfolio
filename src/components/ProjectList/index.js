@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Gobbler from '../../assets/gobbler.png'
-import Stocks from '../../assets/portfolio.png'
-import Weather from '../../assets/weather.png'
+import Gobbler from '../../assets/projects/gobbler.png'
+import Stocks from '../../assets/projects/portfolio.png'
+import Weather from '../../assets/projects/weather.png'
 
 function Projects(props) {
 
@@ -36,7 +36,7 @@ function Projects(props) {
               key={project.name}
             />
             <div className="overlay text">
-              <h1>{project.name}</h1>
+              <h1 className='projectName'>{project.name}</h1>
               <button href={project.github}>GitHub</button>
               <button href={project.application}>Heroku</button>
             </div>

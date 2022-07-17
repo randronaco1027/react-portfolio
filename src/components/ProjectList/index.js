@@ -36,9 +36,13 @@ function Projects(props) {
               key={project.name}
             />
             <div className="overlay text">
-              <h1 className='projectName'>{project.name}</h1>
-              <button href={project.github}>GitHub</button>
-              <button href={project.application}>Heroku</button>
+              <div>
+                <h1 className='projectName'>{project.name}</h1>
+              </div>
+              <div>
+                <button href={project.github}>GitHub</button>
+                <button href={project.application}>Heroku</button>
+              </div>
             </div>
           </div>
         ))}

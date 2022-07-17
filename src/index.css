@@ -189,7 +189,15 @@ textarea {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+}
+
+.mx-2 {
+  margin-right: var(--spacing-two);
+  margin-left: var(--spacing-two);
+}
+
+.mx-2 {
+  margin-right: 2%;
 }
 
 .card {
@@ -211,15 +219,20 @@ textarea {
   border: solid black
 }
 
+.projectName::after{
+  
+    white-space: pre;
+}
 .container {
   position: relative;
   width: 40%;
   margin: 2%;
-  
+  align-items: center;
+  display: flex;
 }
 
 .header {
-  padding: 5%;
+  padding: 1%;
 }
 
 .title {
@@ -237,8 +250,8 @@ textarea {
   .mx-2 {
     margin: 5%;
   }
-  .overlay {
-    padding-top: 0%;
+  .projectName{
+    font-size: 1.5rem;
   }
 }
 
@@ -253,7 +266,10 @@ textarea {
   opacity: 0;
   transition: .5s ease;
   background-color: #008CBA;
-  padding-top: 15%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
 .container:hover .overlay {
@@ -270,7 +286,6 @@ textarea {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  vertical-align: center;
 }
 
 button {
@@ -301,5 +316,6 @@ a {
 
 footer {
   display: flex;
-  justify-content: center;
+  justify-content:space-evenly;
+  padding-bottom: 5%;
 }

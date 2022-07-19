@@ -93,6 +93,10 @@ button[disabled] {
   opacity: .8;
 }
 
+.resumeBtn {
+  width: 100%;
+}
+
 img {
   max-width: 100%;
 }
@@ -108,7 +112,7 @@ form {
 input {
   font-size: 1rem;
   padding: 0.25rem;
-  border: 1px solid var(--dark);
+  border: 1px solid var(--secondary);
   outline: none;
   border-radius: 3px;
   transition: box-shadow 0.2s;
@@ -159,7 +163,7 @@ textarea {
 
 nav a:hover {
   color:var(--primary);
-  text-shadow: 1px 1px var(--tertiary);
+  text-shadow: 2px 2px 4px var(--tertiary);
 }
 
 .initials {
@@ -168,12 +172,12 @@ nav a:hover {
   display: flex;
   justify-content:flex-start;
   margin: 0;
-  font-size: 4vw
+  font-size: 4vw;
 }
 
 .initials:hover {
   color: var(--secondary);
-  font-weight: bolder;
+  box-shadow: 2px 2px 4px var(--tertiary);
 }
 
 .home-header {
@@ -210,7 +214,7 @@ nav {
   height: 100%;
   cursor: pointer;
   padding: 0;
-  background-color: var(--tertiary);
+  background-color: transparent;
   padding: 5px;
   border: none;
 }
@@ -262,7 +266,7 @@ nav {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: var(--tertiary);
   display: flex;
   justify-content: center;
   align-content: center;
@@ -275,7 +279,7 @@ nav {
 }
 
 .text {
-  color: white;
+  color: var(--secondary);
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -290,7 +294,7 @@ button {
 	background: var(--secondary);
 	border: 0;
 	border-radius: 5px;
-	color: #fff;
+	color: var(--primary);
 	cursor: pointer;
 	font-size: 16px;
 	font-weight: 600;
@@ -298,6 +302,9 @@ button {
 	padding: 10px 15px;	
 }
 
+.bb8 {
+  padding: 20px;
+}
 a {
 	border-radius: 5px;
 	color: var(--primary);

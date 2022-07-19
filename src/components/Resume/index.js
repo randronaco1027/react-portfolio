@@ -12,7 +12,7 @@ function Resume() {
                 <dt>Assistant</dt>
                 <dd>I started as an Assistant</dd>
             </dl>
-            <button>Download Resume</button>
+            <button className='resumeBtn'>Download Resume</button>
         </section>
     );
 }

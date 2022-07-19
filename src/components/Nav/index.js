@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Nav(props) {
   const {
@@ -7,17 +8,16 @@ function Nav(props) {
   } = props;
 
   return (
-    <header className="flex-row px-1">
-      <h2 class="header">
-        <a data-testid="link" href="/">
-          Ray Andronaco
-        </a>
-      </h2>
+    <header className="navbar">
       <nav>
-        <ul className="flex-row">
+        <Link to="/about">About</Link>
+        <Link to="/portfolio">Portfolio</Link>
+        <Link to="/resume">Resume</Link>
+        <Link to="/contact">Contact</Link>
+        {/* <ul className="flex-row">
           <li className="mx-2">
             <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
-              About me
+              About
             </a>
           </li>
           <li className={`mx-2 ${contactSelected && 'navActive'}`}>
@@ -29,7 +29,7 @@ function Nav(props) {
           <li className={`mx-2 ${contactSelected && 'navActive'}`}>
             <span onClick={() => setContactSelected(true)}>Resume</span>
           </li>
-        </ul>
+        </ul> */}
       </nav>
     </header>
   );

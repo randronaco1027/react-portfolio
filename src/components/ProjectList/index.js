@@ -26,9 +26,9 @@ function Projects(props) {
     }])
   return (
     <div>
-      <div className="flex-row">
+      <div className="proj-flex-row">
         {projectlist.map((project) => (
-          <div className="container">
+          <div className="proj-container col-md-5 col-sm-10">
             <img
               src={project.imageurl}
               alt={project.name}
@@ -46,7 +46,6 @@ function Projects(props) {
             </div>
           </div>
         ))}
-
       </div>
     </div>
   );

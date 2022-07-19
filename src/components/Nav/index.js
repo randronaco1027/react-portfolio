@@ -2,19 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Nav(props) {
-  // const {
+  // const [
   //   contactSelected,
   //   setContactSelected,
-  // } = props;
+  // ] = useState;
 
   return (
     <header className="navbar">
       <Link to='/' className='initials'>RA</Link>
       <nav>
-        <Link to="/">About</Link>
-        <Link to="/portfolio">Portfolio</Link>
-        <Link to="/resume">Resume</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/" className="navLink">About</Link>
+        <Link to="/portfolio" className="navLink">Portfolio</Link>
+        <Link to="/resume" className="navLink">Resume</Link>
+        <Link to="/contact" className="navLink">Contact</Link>
       </nav>
     </header>
   );

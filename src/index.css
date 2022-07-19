@@ -132,6 +132,7 @@ textarea {
 	height: 120px;
 	border: 3px solid #cccccc;
 	padding: 5px;
+  display: block;
 }
 
 .container {
@@ -170,7 +171,7 @@ nav a:hover {
   text-shadow: 2px 2px 4px var(--tertiary);
 }
 
-nav a:active {
+.lactive-class {
   color:var(--primary);
   text-shadow: 2px 2px 4px var(--tertiary);
 }
@@ -245,6 +246,15 @@ nav {
 
 .projectName {
   font-size: 3vw;
+}
+.about {
+  display:inline-flex
+}
+
+.about img {
+  align-items: center;
+  vertical-align: center;
+  margin-top: 10%;
 }
 
 @media screen and (max-width: 768px) {

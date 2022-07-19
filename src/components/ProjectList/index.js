@@ -61,8 +61,8 @@ function Projects(props) {
                 <h1 className='projectName'>{project.name}</h1>
               </div>
               <div>
-                <button onClick={"location.href='{project.github}'"}>GitHub</button>
-                <button href={project.application}>Application</button>
+                <button onClick={()=> window.open("{project.github}", "_blank")}>GitHub</button>
+                <button onClick={()=> window.open("{project.application}", "_blank")}>Application</button>
               </div>
             </div>
           </div>

@@ -9,7 +9,7 @@ function Footer() {
             className="footerimg mx-1"
             key="GitHub Logo"
             style={{ width: 50, height: 50 }}
-            href="https://github.com/randronaco1027"
+            onClick={()=> window.open("https://github.com/randronaco1027", "_blank")}
           />
           <img
             src={require(`../../assets/misc/linkedin.png`)}
@@ -17,7 +17,7 @@ function Footer() {
             className="footerimg mx-1"
             key="LinkedIn Logo"
             style={{ width: 50, height: 50 }}
-            href="https://www.linkedin.com/in/ray-andronaco-jr-8729503a/"
+            onClick={()=> window.open("https://www.linkedin.com/in/ray-andronaco-jr-8729503a/", "_blank")}
           />
           <img
             src={require(`../../assets/misc/stack.png`)}
@@ -25,7 +25,7 @@ function Footer() {
             className="footerimg mx-1"
             key="Stack Overflow Logo"
             style={{ width: 50, height: 50 }}
-            href="https://stackoverflow.com/users/17970740/randronaco"
+            onClick={()=> window.open("https://stackoverflow.com/users/17970740/randronaco", "_blank")}
           />
         </footer>
     );

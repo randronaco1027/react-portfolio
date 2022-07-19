@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Nav(props) {
   // const [
@@ -9,12 +9,27 @@ function Nav(props) {
 
   return (
     <header className="navbar">
-      <Link to='/' className='initials'>RA</Link>
+      <NavLink to='/' className='initials'>RA</NavLink>
       <nav>
-        <Link to="/" className="navLink">About</Link>
-        <Link to="/portfolio" className="navLink">Portfolio</Link>
-        <Link to="/resume" className="navLink">Resume</Link>
-        <Link to="/contact" className="navLink">Contact</Link>
+        <NavLink to="/" className={({ isActive }) =>
+          (isActive ? "lactive-class" : "not-active-class")}>
+          About
+        </NavLink>
+
+        <NavLink to="/portfolio" className={({ isActive }) =>
+          (isActive ? "lactive-class" : "not-active-class")}>
+          Portfolio
+        </NavLink>
+
+        <NavLink to="/resume" className={({ isActive }) =>
+          (isActive ? "lactive-class" : "not-active-class")}>
+          Resume
+        </NavLink>
+
+        <NavLink to="/contact" className={({ isActive }) =>
+          (isActive ? "lactive-class" : "not-active-class")}>
+          Contact
+        </NavLink>
       </nav>
     </header>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 function Footer() {
-
+// Display icons at foot of page for GitHub, LinkedIn and Stack Overflow pages
     return (
         <footer>
           <img

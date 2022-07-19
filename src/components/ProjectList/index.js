@@ -7,7 +7,7 @@ import Techblog from '../../assets/projects/techblog.png'
 import Workday from '../../assets/projects/workday.png'
 
 function Projects(props) {
-
+  // JSON of projects to be displayed on Portfolio page
   const [projectlist] = useState([
     {
       name: "Gobbler",
@@ -48,6 +48,7 @@ function Projects(props) {
   return (
     <div>
       <div className="proj-flex-row">
+        {/* Map through all projects in array and display on Portfolio page */}
         {projectlist.map((project) => (
           <div className="proj-container col-lg-3 col-md-5 col-sm-10">
             <img

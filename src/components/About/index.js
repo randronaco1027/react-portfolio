@@ -1,5 +1,6 @@
 import React from 'react';
 
+// About page, this is the landing page
 function About() {
   return (
     <div className="about">

@@ -1,5 +1,4 @@
 import React from 'react';
-// import Home from './components/Home'
 import Nav from './components/Nav';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
@@ -8,11 +7,8 @@ import ContactForm from './components/Contact';
 import Footer from './components/Footer'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-
-
+// Routes to redirect user to separate pages without reloading page
 function App() {
-  // const [contactSelected, setContactSelected] = useState(false);
-
   return (
     <Router>
       <div className="flex-column justify-flex-start min-100-vh">
@@ -37,6 +33,7 @@ function App() {
             />
           </Routes>
         </div>
+        {/* Display footer */}
         <Footer />
       </div>
     </Router>

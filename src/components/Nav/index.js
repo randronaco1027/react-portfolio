@@ -1,13 +1,11 @@
 import React from 'react';
+// NavLink keeps the link highlighted when on the respective page
 import { NavLink } from 'react-router-dom';
 
 function Nav(props) {
-  // const [
-  //   contactSelected,
-  //   setContactSelected,
-  // ] = useState;
-
   return (
+    // Navigation bar that appears at top of screen
+    // Clicking the links redirects based off of "NavLink to="
     <header className="navbar">
       <NavLink to='/' className='initials'>RA</NavLink>
       <nav>

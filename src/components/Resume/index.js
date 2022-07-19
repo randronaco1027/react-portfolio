@@ -9,9 +9,9 @@ import ReactIcon from '../../assets/icons/icons8-react-100.png'
 import SQL from '../../assets/icons/icons8-sql-96.png' 
 
 function Resume() {
-
     return (
         <section>
+            {/* Icons of all softwares learned in course */}
             <h1 className="languageTitle">Language Proficiencies</h1>
             <div className='language'>
                 <h1>Front-end</h1>

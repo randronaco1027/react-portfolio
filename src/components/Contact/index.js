@@ -8,6 +8,7 @@ function ContactForm() {
   const [errorMessage, setErrorMessage] = useState('');
   const { name, email, message } = formState;
 
+  // Submit
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!errorMessage) {
@@ -16,6 +17,7 @@ function ContactForm() {
     }
   };
 
+  // Validate email and if user entered text in appropriate fields, alert user if they did not
   const handleChange = (e) => {
     if (e.target.name === 'email') {
       const isValid = validateEmail(e.target.value);
@@ -34,6 +36,7 @@ function ContactForm() {
   };
 
   return (
+    // Contact Form
     <section className="contact-form">
       <h1 data-testid="h1tag">Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>

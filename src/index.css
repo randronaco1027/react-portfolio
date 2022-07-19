@@ -247,6 +247,14 @@ nav {
   .projectName {
     font-size: 6vw;
   }
+  .avatar {
+    text-align: center;
+    
+  }
+  .about {
+    display: block;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 960px) {
@@ -321,8 +329,9 @@ button {
 	padding: 10px 15px;	
 }
 
-.bb8 {
+.avatar {
   padding: 20px;
+  border: none;
 }
 a {
 	border-radius: 5px;
@@ -336,6 +345,18 @@ a {
 
 .navActive {
   color: var(--secondary);
+}
+
+.language {
+  border: solid black;
+  margin: 10px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: var(--tertiary);
+}
+
+.languageTitle {
+  text-align: center;
 }
 
 footer {

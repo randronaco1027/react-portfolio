@@ -6,7 +6,7 @@ function Footer() {
           <img
             src={require(`../../assets/misc/github.png`)}
             alt="GitHub Logo"
-            className="footimg mx-1"
+            className="footerimg mx-1"
             key="GitHub Logo"
             style={{ width: 50, height: 50 }}
             href="https://github.com/randronaco1027"
@@ -14,7 +14,7 @@ function Footer() {
           <img
             src={require(`../../assets/misc/linkedin.png`)}
             alt="LinkedIn Logo"
-            className="footimg mx-1"
+            className="footerimg mx-1"
             key="LinkedIn Logo"
             style={{ width: 50, height: 50 }}
             href="https://www.linkedin.com/in/ray-andronaco-jr-8729503a/"
@@ -22,7 +22,7 @@ function Footer() {
           <img
             src={require(`../../assets/misc/stack.png`)}
             alt="Stack Overflow Logo"
-            className="footimg mx-1"
+            className="footerimg mx-1"
             key="Stack Overflow Logo"
             style={{ width: 50, height: 50 }}
             href="https://stackoverflow.com/users/17970740/randronaco"

@@ -7,6 +7,7 @@ import Mongo from '../../assets/icons/icons8-mongodb-96.png'
 import Node from '../../assets/icons/icons8-node-js-96.png'
 import ReactIcon from '../../assets/icons/icons8-react-100.png'
 import SQL from '../../assets/icons/icons8-sql-96.png' 
+import GraphQL from '../../assets/icons/icons8-graphql-96.png'
 
 function Resume() {
     return (
@@ -68,6 +69,13 @@ function Resume() {
                     alt="sql"
                     className="footerimg mx-1"
                     key="sql"
+                    style={{ width: 50, height: 50 }}
+                />
+                <img
+                    src={GraphQL}
+                    alt="graphql"
+                    className="footerimg mx-1"
+                    key="graphql"
                     style={{ width: 50, height: 50 }}
                 />
             </div>

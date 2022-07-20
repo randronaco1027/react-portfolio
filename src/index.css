@@ -40,9 +40,9 @@ body {
   background: var(--primary);
   color: var(--secondary);
   font-family: 'Encode Sans', sans-serif;
-  background: linear-gradient(-45deg, #2B2D42, #F7E733, #F7F7F9, #41E2BA);
+  background: linear-gradient(-45deg, var(--primary), white, var(--tertiary));
   background-size: 200% 200%;
-  animation: gradient 20s ease infinite;
+  animation: gradient 10s ease infinite;
 }
 
 /* Original template created by Alison Quaglia */
@@ -276,6 +276,10 @@ nav {
   #contact-form {
     margin: 0;
   }
+
+  nav a {
+    font-size: 3vw;
+  }
 }
 
 @media screen and (min-width: 960px) {
@@ -371,9 +375,10 @@ a {
 .language {
   border: solid var(--secondary);
   margin: 10px;
+  padding: 5px;
   border-radius: 15px;
   text-align: center;
-  background-color: rgba(65, 226, 186, .3);
+  background-color: rgba(65, 226, 186, .25);
  
 }
 

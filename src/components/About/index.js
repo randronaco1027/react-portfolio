@@ -8,7 +8,7 @@ function About() {
         <h1 id="about">About me</h1>
         <div className="my-2">
           <p>
-            My name is a Ray Andronaco and I am studying to become a full stack developer. I love to learn about the newest technologies and create my own applications. My top priorities are writing clean, organized code that all can follow.
+          Full-stack web developer, with a career in finance, looking to begin a new career in software. Through my course, I have developed skills in various front-end, back-end and database languages. These languages include but are not limited to: HTML, CSS, JavaScript, Node JS, Express JS, MongoDB, Handlebars and most recently React. I have worked with several different groups to build applications from the ground up. Organized, clean, and concise code is something I take a lot of pride in. I am truly passionate about software development and cannot wait for what lies ahead.
           </p>
         </div>
       </section>

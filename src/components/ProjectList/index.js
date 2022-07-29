@@ -24,7 +24,7 @@ function Projects(props) {
     {
       name: "Weather Tracker",
       github: "https://github.com/randronaco1027/weather-dashboard",
-      application: "https://github.com/randronaco1027/weather-dashboard",
+      application: "https://randronaco1027.github.io/weather-dashboard/",
       imageurl: Weather
     },
     {

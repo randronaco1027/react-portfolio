@@ -4,7 +4,7 @@ import Stocks from '../../assets/projects/portfolio.png'
 import Weather from '../../assets/projects/weather.png'
 import Budget from '../../assets/projects/budget.png'
 import Techblog from '../../assets/projects/techblog.png'
-import Workday from '../../assets/projects/workday.png'
+import Bubbly from '../../assets/projects/bubbly.png'
 
 function Projects(props) {
   // JSON of projects to be displayed on Portfolio page
@@ -40,10 +40,10 @@ function Projects(props) {
       imageurl: Techblog
     },
     {
-      name: "Work Day Scheduler",
-      github: "https://github.com/randronaco1027/work-day-scheduler",
-      application: "https://randronaco1027.github.io/work-day-scheduler/",
-      imageurl: Workday
+      name: "Bubbly",
+      github: "https://github.com/randronaco1027/booze-and-bubbles",
+      application: "https://desolate-cove-27377.herokuapp.com/",
+      imageurl: Bubbly
     }])
   return (
     <div>

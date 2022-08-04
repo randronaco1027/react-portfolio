@@ -42,7 +42,7 @@ function Projects(props) {
     {
       name: "Bubbly",
       github: "https://github.com/randronaco1027/booze-and-bubbles",
-      application: "https://desolate-cove-27377.herokuapp.com/",
+      application: "https://snehp491-booze-bubbles.herokuapp.com/",
       imageurl: Bubbly
     }])
   return (

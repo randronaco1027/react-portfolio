@@ -391,3 +391,9 @@ footer {
   justify-content:space-evenly;
   padding-bottom: 5%;
 }
+
+.div-input {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}

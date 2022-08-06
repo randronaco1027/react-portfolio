@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 import { validateEmail } from '../../utils/helpers';
 
@@ -8,9 +9,22 @@ function ContactForm() {
   const [errorMessage, setErrorMessage] = useState('');
   const { name, email, message } = formState;
 
+  const form = useRef()
   // Submit
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
+
+    emailjs.sendForm(
+      'service_zkvp7lo',
+      'template_e3iy6er',
+      form.current,
+      'zJiqUj2ErrATBt6-g')
+      .then((result) => {
+        e.target.reset()
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
     if (!errorMessage) {
       setFormState({ [e.target.name]: e.target.value });
       console.log('Form', formState);
@@ -28,7 +42,7 @@ function ContactForm() {
       }
     } else {
       if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
+        setErrorMessage(`A ${e.target.name} is required.`);
       } else {
         setErrorMessage('');
       }
@@ -37,27 +51,27 @@ function ContactForm() {
 
   return (
     // Contact Form
-    <section className="contact-form">
+    <section className="contact-form mb-5">
       <h1 data-testid="h1tag">Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
+      <form ref={form} onSubmit={sendEmail}>
+        <div className='p-1 div-input'>
+          <label htmlFor="name">Name</label>
           <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
         </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
+        <div className='p-1 div-input'>
+          <label htmlFor="email">Email</label>
           <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
         </div>
         <div>
-          <label htmlFor="message">Message:</label>
-          <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+          <label htmlFor="message" className='p-1'>Message</label>
+          <textarea name="message" className='m-1' defaultValue={message} onBlur={handleChange} />
         </div>
         {errorMessage && (
           <div>
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">Submit</button>
+        <button data-testid="button" type="submit" className='m-1'>Submit</button>
       </form>
     </section>
   );

@@ -71,7 +71,9 @@ function Resume() {
                     </div>
                 ))}
             </div>
-            <button className='resumeBtn'>Download Resume</button>
+            <a href='../assets/misc/'>
+                <button className='resumeBtn'>Download Resume</button>
+            </a>
         </section>
     );
 }

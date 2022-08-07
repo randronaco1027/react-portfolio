@@ -397,3 +397,17 @@ footer {
   flex-direction: column;
   width: 70%;
 }
+
+.icon-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.icon-img {
+  
+  align-items: center;
+}
+.sep-icon-section {
+  display: flex;
+  justify-content: center;
+}

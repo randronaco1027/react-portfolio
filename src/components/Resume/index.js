@@ -71,7 +71,7 @@ function Resume() {
                     </div>
                 ))}
             </div>
-            <a href='../assets/misc/'>
+            <a href={require('../../assets/misc/RayAndronacoResume.pdf')} download>
                 <button className='resumeBtn'>Download Resume</button>
             </a>
         </section>

@@ -48,12 +48,15 @@ function Projects() {
               key={project.name}
             />
             <div className="overlay text">
-              <div>
-                <h1 className='projectName'>{project.name}</h1>
+              <div className='projectName'>
+                <h1>{project.name}</h1>
               </div>
-              <div>
+              <div className='projectBtn'>
                 <button onClick={() => window.open(`${project.github}`, "_blank")}>GitHub</button>
                 <button onClick={() => window.open(`${project.application}`, "_blank")}>Application</button>
+              </div>
+              <div className='skillset'>
+                <p>{project.skillset}</p>
               </div>
             </div>
           </div>

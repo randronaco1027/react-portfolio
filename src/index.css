@@ -95,6 +95,7 @@ button[disabled] {
 
 .resumeBtn {
   width: 100%;
+  font-size: 2vw;
 }
 
 img {
@@ -244,9 +245,7 @@ nav {
   border: solid black
 }
 
-.projectName {
-  font-size: 3vw;
-}
+
 .about {
   display:inline-flex
 }
@@ -256,36 +255,26 @@ nav {
   vertical-align: center;
   margin-top: 10%;
 }
-
-@media screen and (max-width: 768px) {
-  .projectName {
-    font-size: 6vw;
-  }
-  .avatar {
-    text-align: center;
-    
-  }
-  .about {
-    display: block;
-    text-align: center;
-  }
-  textarea {
-    width: 100%;
-  }
-
-  #contact-form {
-    margin: 0;
-  }
-
-  nav a {
-    font-size: 3vw;
-  }
+.projectName {
+  margin-top: 5px;
 }
 
-@media screen and (min-width: 960px) {
-  .projectName {
-    font-size: 1.7vw;
-  }
+.projectName h1 {
+  font-size: 2vw;
+  margin: 0
+}
+
+.skillset {
+  font-size: 1vw;
+  margin-top: 3px;
+}
+
+.projectBtn {
+  margin: 0;
+}
+
+.projectBtn button {
+  margin: 3px;
 }
 
 .container {
@@ -348,10 +337,10 @@ button {
 	border-radius: 5px;
 	color: var(--primary);
 	cursor: pointer;
-	font-size: 16px;
+	font-size: 1vw;
 	font-weight: 600;
 	margin-bottom: 30px;
-	padding: 10px 15px;	
+	padding: 5px 10px;	
 }
 
 .avatar {
@@ -365,7 +354,6 @@ a {
 	padding: 2px 4px;
 	margin-left: -2px;
 	margin-right: -2px;
-	
 }
 
 .navActive {
@@ -379,7 +367,6 @@ a {
   border-radius: 15px;
   text-align: center;
   background-color: rgba(65, 226, 186, .25);
- 
 }
 
 .languageTitle {
@@ -410,4 +397,48 @@ footer {
 .sep-icon-section {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .projectName h1{
+    font-size: 6vw;
+  }
+  .avatar {
+    text-align: center;
+  }
+  .about {
+    display: block;
+    text-align: center;
+  }
+  textarea {
+    width: 100%;
+  }
+
+  #contact-form {
+    margin: 0;
+  }
+
+  nav a {
+    font-size: 3vw;
+  }
+
+  .skillset {
+    font-size: 3vw;
+  }
+
+  button {
+    font-size: 2vw;
+    padding: 2%;
+  }
+
+  .projectBtn {
+    margin: 2%
+  }
+
+}
+
+@media screen and (min-width: 960px) {
+  .projectName {
+    font-size: 1.7vw;
+  }
 }

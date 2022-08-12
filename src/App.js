@@ -4,7 +4,6 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume'
 import ContactForm from './components/Contact';
-import Footer from './components/Footer'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Routes to redirect user to separate pages without reloading page
@@ -33,8 +32,6 @@ function App() {
             />
           </Routes>
         </div>
-        {/* Display footer */}
-        <Footer />
       </div>
     </Router>
   );

@@ -53,31 +53,55 @@ function ContactForm() {
     // Contact Form
     <section className="contact-form my-5">
       <h1 data-testid="h1tag">Contact me</h1>
-      <div className="email-link">
-        <p>Email me directly:     </p>
-        <a href="mailto:randronaco1027@gmail.com"> randronaco1027@gmail.com</a>
-      </div>
-      <h5>- OR -</h5>
-      <form ref={form} onSubmit={sendEmail}>
-        <div className='p-1 div-input'>
-          <label htmlFor="name">Name</label>
-          <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+      <div className="contact-section">
+        <div className='form'>
+          <form ref={form} onSubmit={sendEmail}>
+            <div className='p-1 div-input'>
+              <label htmlFor="name">Name</label>
+              <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+            </div>
+            <div className='p-1 div-input'>
+              <label htmlFor="email">Email</label>
+              <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+            </div>
+            <div>
+              <label htmlFor="message" className='p-1'>Message</label>
+              <textarea name="message" className='m-1' defaultValue={message} onBlur={handleChange} />
+            </div>
+            {errorMessage && (
+              <div>
+                <p className="error-text">{errorMessage}</p>
+              </div>
+            )}
+            <button data-testid="button" type="submit" className='m-1'>Submit</button>
+          </form>
         </div>
-        <div className='p-1 div-input'>
-          <label htmlFor="email">Email</label>
-          <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
-        </div>
-        <div>
-          <label htmlFor="message" className='p-1'>Message</label>
-          <textarea name="message" className='m-1' defaultValue={message} onBlur={handleChange} />
-        </div>
-        {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
+        <div className='contact-links'>
+          <h4>Ray Andronaco</h4>
+          <p>Email:</p>
+          <a href="mailto:randronaco1027@gmail.com">randronaco1027@gmail.com</a>
+          <div className="icon-links">
+            <div className="footer-img">
+              <img
+                src={require(`../../assets/misc/github.png`)}
+                alt="GitHub Logo"
+                className="footerimg"
+                key="GitHub Logo"
+                
+                onClick={() => window.open("https://github.com/randronaco1027", "_blank")}
+              />
+              <img
+                src={require(`../../assets/misc/linkedin.png`)}
+                alt="LinkedIn Logo"
+                className="footerimg"
+                key="LinkedIn Logo"
+                
+                onClick={() => window.open("https://www.linkedin.com/in/ray-andronaco-jr-8729503a/", "_blank")}
+              />
+            </div>
           </div>
-        )}
-        <button data-testid="button" type="submit" className='m-1'>Submit</button>
-      </form>
+        </div>
+      </div>
     </section>
   );
 }

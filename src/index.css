@@ -70,6 +70,10 @@ a {
   padding: 0;
 }
 
+.contact-form h1 {
+  text-align: center
+}
+
 .contact-form h5 {
   margin: 2%;
 }
@@ -147,7 +151,7 @@ li {
 }
 
 textarea {
-	width: 600px;
+	width: 90%;
 	height: 120px;
 	border: 3px solid #cccccc;
 	padding: 5px;
@@ -178,6 +182,31 @@ textarea {
 
 .contact-form {
   width: 100%;
+}
+.contact-section {
+  display: flex;
+  width: 100%;
+}
+
+.form {
+  width: 60%;
+  padding-right: 3%;
+}
+
+.contact-links {
+  width: 40%;
+  text-align: center;
+}
+
+.icon-links {
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-links p {
+  text-align: center;
+  text-decoration: underline
 }
 
 .flex-row {
@@ -267,13 +296,7 @@ nav {
   vertical-align: center;
 }
 
-.footerimg {
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  padding: 0;
-  background-color: transparent;
-}
+
 
 .hoverText {
   background-color: white;
@@ -405,7 +428,29 @@ a {
 footer {
   display: flex;
   justify-content:space-evenly;
-  padding-bottom: 5%;
+  
+  margin-top: 3%;
+  background-color:#cccccc;
+}
+
+.footer-info {
+  display:block;
+  justify-content: flex-start;
+}
+
+.footer-img {
+  display: flex;
+  justify-content: center;
+}
+
+.footerimg {
+  
+  cursor: pointer;
+  padding: 0;
+  margin: 5%;
+  background-color: transparent;
+  width: 15%;
+  height: 55%
 }
 
 .div-input {
@@ -485,6 +530,20 @@ footer {
   .email-link a {
     padding: 1%
   }
+
+  .contact-section {
+    display: block;
+    width: 100%;
+  }
+
+  .form {
+    width: 90%;
+  }
+
+  .contact-links {
+    width: 90%;
+  }
+
 }
 
 @media screen and (min-width: 960px) {

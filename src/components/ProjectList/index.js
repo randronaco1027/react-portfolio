@@ -1,49 +1,39 @@
 import React, { useState } from 'react'
-import Gobbler from '../../assets/projects/gobbler.png'
-import Stocks from '../../assets/projects/portfolio.png'
 import Weather from '../../assets/projects/weather.png'
 import Budget from '../../assets/projects/budget.png'
 import Techblog from '../../assets/projects/techblog.png'
 import Bubbly from '../../assets/projects/bubbly.png'
 
-function Projects(props) {
+function Projects() {
   // JSON of projects to be displayed on Portfolio page
   const [projectlist] = useState([
-    {
-      name: "Gobbler",
-      github: "https://github.com/randronaco1027/group-6_fullstack-project",
-      application: "https://quiet-harbor-99755.herokuapp.com/",
-      imageurl: Gobbler
-    },
-    {
-      name: "Portfolio Manager",
-      github: "https://github.com/snehp491/Group1",
-      application: "https://github.com/snehp491/Group1",
-      imageurl: Stocks
-    },
     {
       name: "Weather Tracker",
       github: "https://github.com/randronaco1027/weather-dashboard",
       application: "https://randronaco1027.github.io/weather-dashboard/",
-      imageurl: Weather
+      imageurl: Weather,
+      skillset: 'HTML, CSS, JavaScript, API'
     },
     {
       name: "Budget Tracker",
       github: "https://github.com/randronaco1027/budget-tracker",
       application: "https://lower-minister-91619.herokuapp.com/",
-      imageurl: Budget
+      imageurl: Budget,
+      skillset: 'HTML, CSS, JavaScript, PWA'
     },
     {
       name: "Tech Blog",
       github: "https://github.com/randronaco1027/tech-blog-MVC",
       application: "https://gentle-plains-69704.herokuapp.com/",
-      imageurl: Techblog
+      imageurl: Techblog,
+      skillset: 'CSS, Handlebars, JavaScript, Node.js, MySQL, Sequelize'
     },
     {
       name: "Bubbly",
       github: "https://github.com/randronaco1027/booze-and-bubbles",
       application: "https://snehp491-booze-bubbles.herokuapp.com/",
-      imageurl: Bubbly
+      imageurl: Bubbly,
+      skillset: 'MongoDB, Express, React, Node.js, CSS'
     }])
   return (
     <div>
@@ -62,8 +52,8 @@ function Projects(props) {
                 <h1 className='projectName'>{project.name}</h1>
               </div>
               <div>
-                <button onClick={()=> window.open(`${project.github}`, "_blank")}>GitHub</button>
-                <button onClick={()=> window.open(`${project.application}`, "_blank")}>Application</button>
+                <button onClick={() => window.open(`${project.github}`, "_blank")}>GitHub</button>
+                <button onClick={() => window.open(`${project.application}`, "_blank")}>Application</button>
               </div>
             </div>
           </div>

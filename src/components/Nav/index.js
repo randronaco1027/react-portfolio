@@ -13,7 +13,7 @@ function AppNavbar(props) {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto navbar-links">
-            <NavLink to="/" className={({ isActive }) =>
+            <NavLink to="/about" className={({ isActive }) =>
               (isActive ? "lactive-class" : "not-active-class")}>About</NavLink>
             <NavLink to="/portfolio" className={({ isActive }) =>
               (isActive ? "lactive-class" : "not-active-class")}>

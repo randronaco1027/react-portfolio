@@ -1,5 +1,6 @@
 import React from 'react';
 import AppNavBar from './components/Nav';
+import Home from './components/Home'
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume'
@@ -16,6 +17,10 @@ function App() {
           <Routes>
             <Route
               path="/"
+              element={<Home />}
+            />
+            <Route
+              path="/about"
               element={<About />}
             />
             <Route

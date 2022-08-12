@@ -89,6 +89,21 @@ a {
 header {
   background: var(--dark);
 }
+.home {
+  align-items: center;
+  padding-top: 15%;
+}
+.home-name h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9vw;
+}
+
+.home-name h4 {
+  font-size: 5vw;
+  text-align: center;
+}
 
 header a {
   color: var(--primary);
@@ -106,6 +121,9 @@ button {
   background-color: var(--secondary);
 }
 
+.projects {
+  text-align: center
+}
 button:hover {
   opacity: .8;
 }
@@ -196,6 +214,10 @@ textarea {
 .contact-links {
   width: 40%;
   text-align: center;
+}
+
+.contact-links p {
+  margin: 0;
 }
 
 .icon-links {
@@ -308,7 +330,8 @@ nav {
 
 
 .about {
-  display:inline-flex
+  display:inline-flex;
+  text-align: center;
 }
 
 .projectName {
@@ -483,9 +506,6 @@ footer {
   .projectName h1{
     font-size: 6vw;
   }
-  .avatar {
-    text-align: center;
-  }
   .about {
     display: block;
     text-align: center;
@@ -498,8 +518,11 @@ footer {
     margin: 0;
   }
 
+  nav {
+    padding: 5%;
+  }
   nav a {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 
   .skillset {
@@ -516,7 +539,8 @@ footer {
   }
 
   .initials {
-    font-size: 5vw;
+    font-size: 6vw;
+    margin: 5%
   }
 
   .email-link {
@@ -537,13 +561,41 @@ footer {
   }
 
   .form {
-    width: 90%;
+    width: 100%;
   }
 
   .contact-links {
-    width: 90%;
+    width: 100%;
+    padding: 5%;
   }
 
+  .contact-links p {
+    margin: 0;
+  }
+
+  textarea {
+    width: 100%
+  }
+
+  .div-input {
+    width: 100%;
+  }
+
+  button {
+    font-size: 4vw;
+  }
+
+  .resumeBtn {
+    font-size: 4vw;
+  }
+
+  .projectBtn button {
+    font-size: 4vw;
+  }
+
+  .home {
+    padding-top: 60%
+  }
 }
 
 @media screen and (min-width: 960px) {

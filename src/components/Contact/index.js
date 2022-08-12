@@ -76,7 +76,7 @@ function ContactForm() {
             <button data-testid="button" type="submit" className='m-1'>Submit</button>
           </form>
         </div>
-        <div className='contact-links'>
+        <div className='contact-links my-5'>
           <h4>Ray Andronaco</h4>
           <p>Email:</p>
           <a href="mailto:randronaco1027@gmail.com">randronaco1027@gmail.com</a>

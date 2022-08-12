@@ -40,7 +40,7 @@ function Projects() {
       <div className="proj-flex-row">
         {/* Map through all projects in array and display on Portfolio page */}
         {projectlist.map((project) => (
-          <div className="proj-container col-lg-3 col-md-5 col-sm-10">
+          <div className="proj-container col-md-5 col-sm-10">
             <img
               src={project.imageurl}
               alt={project.name}

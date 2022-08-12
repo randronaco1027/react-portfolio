@@ -4,7 +4,7 @@ import React from 'react';
 function About() {
   return (
     <div className="about">
-      <section className="my-5" >
+      <section className="m-5" >
         <h1 id="about">About me</h1>
         <div className="my-2">
           <p>
@@ -12,13 +12,7 @@ function About() {
           </p>
         </div>
       </section>
-      <img
-        src={require(`../../assets/misc/developer.webp`)}
-        alt="GitHub Logo"
-        className="img-thumbnail mx-1 avatar"
-        key="GitHub Logo"
-        style={{ width: 240, height: 200 }}
-      />
+      
     </div>
   );
 }

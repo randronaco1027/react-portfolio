@@ -4,7 +4,7 @@ import ProjectList from '../ProjectList'
 // Display data from ProjectList
 function Portfolio(props) {
   return (
-    <section>
+    <section className='my-5'>
       <ProjectList/>
     </section>
   )

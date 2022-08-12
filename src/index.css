@@ -64,6 +64,24 @@ a {
   font-weight: bold;
 }
 
+.contact-form a {
+  color: var(--secondary);
+  text-decoration: underline;
+  padding: 0;
+}
+
+.contact-form h5 {
+  margin: 2%;
+}
+
+.email-link {
+  display: flex;
+}
+
+.email-link p {
+  margin-right:5px;
+}
+
 header {
   background: var(--dark);
 }
@@ -141,6 +159,21 @@ textarea {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  vertical-align: center;
+  
+  display: flex;
+  justify-content: center;
+  vertical-align: center;
+}
+
+.navbar-toggler {
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  margin: 1%;
+  padding: 1%
 }
 
 .contact-form {
@@ -184,6 +217,7 @@ nav a:hover {
   justify-content:flex-start;
   margin: 0;
   font-size: 4vw;
+  padding: 2%
 }
 
 .initials:hover {
@@ -225,8 +259,12 @@ nav {
   height: 100%;
   cursor: pointer;
   padding: 0;
+  margin: 0;
   background-color: transparent;
   border: solid var(--secondary);
+  display: flex;
+  align-items: center;
+  vertical-align: center;
 }
 
 .footerimg {
@@ -250,37 +288,28 @@ nav {
   display:inline-flex
 }
 
-.about img {
-  align-items: center;
-  vertical-align: center;
-  margin-top: 10%;
-}
 .projectName {
   margin-top: 5px;
 }
 
 .projectName h1 {
-  font-size: 2vw;
+  font-size: 3vw;
   margin: 0
 }
 
 .skillset {
-  font-size: 1vw;
+  font-size: 1.5vw;
   margin-top: 3px;
 }
 
 .projectBtn {
   margin: 0;
+  padding: 3%;
 }
 
 .projectBtn button {
   margin: 3px;
-}
-
-.container {
-  margin-top: 2%;
-  display: flex;
-  justify-content: center;
+  font-size: 1.4vw;
 }
 
 .header {
@@ -399,6 +428,12 @@ footer {
   justify-content: center;
 }
 
+.navbar-links {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
 @media screen and (max-width: 768px) {
   .projectName h1{
     font-size: 6vw;
@@ -435,6 +470,21 @@ footer {
     margin: 2%
   }
 
+  .initials {
+    font-size: 5vw;
+  }
+
+  .email-link {
+    display:block;
+  }
+
+  .email-link p {
+    margin: 0;
+  }
+
+  .email-link a {
+    padding: 1%
+  }
 }
 
 @media screen and (min-width: 960px) {

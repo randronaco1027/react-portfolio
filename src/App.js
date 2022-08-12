@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from './components/Nav';
+import AppNavBar from './components/Nav';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume'
@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <div className="flex-column justify-flex-start min-100-vh">
-        <Nav />
+        <AppNavBar />
         <div className="container">
           <Routes>
             <Route

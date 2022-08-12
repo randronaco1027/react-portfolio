@@ -51,8 +51,13 @@ function ContactForm() {
 
   return (
     // Contact Form
-    <section className="contact-form mb-5">
+    <section className="contact-form my-5">
       <h1 data-testid="h1tag">Contact me</h1>
+      <div className="email-link">
+        <p>Email me directly:     </p>
+        <a href="mailto:randronaco1027@gmail.com"> randronaco1027@gmail.com</a>
+      </div>
+      <h5>- OR -</h5>
       <form ref={form} onSubmit={sendEmail}>
         <div className='p-1 div-input'>
           <label htmlFor="name">Name</label>

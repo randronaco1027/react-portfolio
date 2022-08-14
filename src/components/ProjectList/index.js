@@ -33,7 +33,7 @@ function Projects() {
       github: "https://github.com/randronaco1027/booze-and-bubbles",
       application: "https://snehp491-booze-bubbles.herokuapp.com/",
       imageurl: Bubbly,
-      skillset: 'MongoDB, Express, React, Node.js, CSS'
+      skillset: 'MongoDB, Express, React, Node.js, JavaScript, CSS'
     }])
   return (
     <div>

@@ -24,4 +24,4 @@ https://github.com/randronaco1027/budget-tracker
 
 Heroku: 
 
-https://radiant-sea-17338.herokuapp.com/ 
+https://randronaco1027.herokuapp.com/ 

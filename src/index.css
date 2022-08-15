@@ -79,6 +79,10 @@ body {
   transform:translate(-50%, -50%);
 }
 
+.content h1 {
+  font-size: 6vw;
+}
+
 @keyframes slide {
   0% {
     transform:translateX(-25%);
@@ -311,7 +315,7 @@ nav a:hover {
   justify-content:flex-start;
   margin: 0;
   font-size: 4vw;
-  padding: 2%
+  padding: 2%;
 }
 
 .initials:hover {
@@ -645,6 +649,13 @@ footer {
 
   .contactbtn {
     font-size: 3vw
+  }
+
+  .content h1 {
+    font-size: 8vw
+  }
+  .content h4 {
+    font-size: 4vw
   }
 }
 

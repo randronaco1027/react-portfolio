@@ -3,6 +3,8 @@ import Weather from '../../assets/projects/weather.png'
 import Budget from '../../assets/projects/budget.png'
 import Techblog from '../../assets/projects/techblog.png'
 import Bubbly from '../../assets/projects/bubbly.png'
+import { FaWrench } from 'react-icons/fa'
+import {BsPencilSquare} from 'react-icons/bs'
 
 function Projects() {
   // JSON of projects to be displayed on Portfolio page
@@ -12,6 +14,7 @@ function Projects() {
       github: "https://github.com/randronaco1027/weather-dashboard",
       application: "https://randronaco1027.github.io/weather-dashboard/",
       imageurl: Weather,
+      description: 'Search weather anywhere',
       skillset: 'HTML, CSS, JavaScript, API'
     },
     {
@@ -19,6 +22,7 @@ function Projects() {
       github: "https://github.com/randronaco1027/budget-tracker",
       application: "https://lower-minister-91619.herokuapp.com/",
       imageurl: Budget,
+      description: 'A PWA for personal budgeting',
       skillset: 'HTML, CSS, JavaScript, PWA'
     },
     {
@@ -26,6 +30,7 @@ function Projects() {
       github: "https://github.com/randronaco1027/tech-blog-MVC",
       application: "https://gentle-plains-69704.herokuapp.com/",
       imageurl: Techblog,
+      description: 'A social platform for techies',
       skillset: 'CSS, Handlebars, JavaScript, Node.js, MySQL, Sequelize'
     },
     {
@@ -33,6 +38,7 @@ function Projects() {
       github: "https://github.com/randronaco1027/booze-and-bubbles",
       application: "https://desolate-cove-27377.herokuapp.com/",
       imageurl: Bubbly,
+      description: 'A cocktail search engine',
       skillset: 'MongoDB, Express, React, Node.js, JavaScript, CSS'
     }])
   return (
@@ -56,7 +62,8 @@ function Projects() {
                 <button onClick={() => window.open(`${project.application}`, "_blank")}>Application</button>
               </div>
               <div className='skillset'>
-                <p>{project.skillset}</p>
+                <p className="m-0"><BsPencilSquare/> {project.description}</p>
+                <p><FaWrench/> {project.skillset}</p>
               </div>
             </div>
           </div>

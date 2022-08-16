@@ -3,8 +3,7 @@ import Weather from '../../assets/projects/weather.png'
 import Budget from '../../assets/projects/budget.png'
 import Techblog from '../../assets/projects/techblog.png'
 import Bubbly from '../../assets/projects/bubbly.png'
-import { FaWrench } from 'react-icons/fa'
-import {BsPencilSquare} from 'react-icons/bs'
+
 
 function Projects() {
   // JSON of projects to be displayed on Portfolio page
@@ -62,8 +61,8 @@ function Projects() {
                 <button onClick={() => window.open(`${project.application}`, "_blank")}>Application</button>
               </div>
               <div className='skillset'>
-                <p className="m-0"><BsPencilSquare/> {project.description}</p>
-                <p><FaWrench/> {project.skillset}</p>
+                <p className="m-0">{project.description}</p>
+                <p>{project.skillset}</p>
               </div>
             </div>
           </div>

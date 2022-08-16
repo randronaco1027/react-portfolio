@@ -11,10 +11,11 @@ code {
 }
 
 main {
-	margin: 0 auto;
-	max-width: 90%;
+  margin: 0 auto;
+  max-width: 90%;
   padding: 50px 30px;
 }
+
 :root {
   --primary: #F7E733;
   --secondary: #2B2D42;
@@ -46,37 +47,37 @@ body {
 }
 
 .bg {
-  animation:slide 3s ease-in-out infinite alternate;
+  animation: slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-20deg, var(--primary) 50%, var(--tertiary) 50%);
-  bottom:0;
-  left:-100%;
-  opacity:.5;
-  position:fixed;
-  right:-50%;
-  top:0;
-  z-index:-1;
+  bottom: 0;
+  left: -100%;
+  opacity: .5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
 }
 
 .bg2 {
-  animation-direction:alternate-reverse;
-  animation-duration:4s;
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
 }
 
 .bg3 {
-  animation-duration:5s;
+  animation-duration: 5s;
 }
 
 .content {
-  background-color:rgba(255,255,255,.8);
-  border-radius:.25em;
-  box-shadow:0 0 .25em rgba(0,0,0,.25);
-  box-sizing:border-box;
-  left:50%;
-  padding:10vmin;
-  position:fixed;
-  text-align:center;
-  top:50%;
-  transform:translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, .8);
+  border-radius: .25em;
+  box-shadow: 0 0 .25em rgba(0, 0, 0, .25);
+  box-sizing: border-box;
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .content h1 {
@@ -85,23 +86,26 @@ body {
 
 @keyframes slide {
   0% {
-    transform:translateX(-25%);
+    transform: translateX(-25%);
   }
+
   100% {
-    transform:translateX(25%);
+    transform: translateX(25%);
   }
 }
 
 /* Original template created by Alison Quaglia */
 @keyframes gradient {
   0% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
+
   50% {
-      background-position: 100% 50%;
+    background-position: 100% 50%;
   }
+
   100% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 }
 
@@ -130,16 +134,18 @@ a {
 }
 
 .email-link p {
-  margin-right:5px;
+  margin-right: 5px;
 }
 
 header {
   background: var(--dark);
 }
+
 .home {
   align-items: center;
   padding-top: 15%;
 }
+
 .home-name h1 {
   display: flex;
   justify-content: center;
@@ -171,6 +177,7 @@ button {
 .projects {
   text-align: center
 }
+
 button:hover {
   opacity: .8;
 }
@@ -216,10 +223,10 @@ li {
 }
 
 textarea {
-	width: 90%;
-	height: 120px;
-	border: 3px solid #cccccc;
-	padding: 5px;
+  width: 90%;
+  height: 120px;
+  border: 3px solid #cccccc;
+  padding: 5px;
   display: block;
 }
 
@@ -229,7 +236,7 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   vertical-align: center;
-  
+
   display: flex;
   justify-content: center;
   vertical-align: center;
@@ -248,6 +255,7 @@ textarea {
 .contact-form {
   width: 100%;
 }
+
 .contact-section {
   display: flex;
   width: 100%;
@@ -293,18 +301,18 @@ textarea {
 
 .navbar {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   padding: 1%;
   background-color: var(--secondary);
 }
 
 nav a:hover {
-  color:var(--primary);
+  color: var(--primary);
   text-shadow: 2px 2px 4px var(--tertiary);
 }
 
 .lactive-class {
-  color:var(--primary);
+  color: var(--primary);
   text-shadow: 2px 2px 4px var(--tertiary);
 }
 
@@ -312,7 +320,7 @@ nav a:hover {
   color: var(--secondary);
   background-color: var(--primary);
   display: flex;
-  justify-content:flex-start;
+  justify-content: flex-start;
   margin: 0;
   font-size: 4vw;
   padding: 2%;
@@ -332,7 +340,7 @@ nav a:hover {
 }
 
 nav a {
-  font-size:2vw;
+  font-size: 2vw;
   margin-right: 2%
 }
 
@@ -377,7 +385,7 @@ nav {
 
 
 .about {
-  display:inline-flex;
+  display: inline-flex;
   text-align: center;
 }
 
@@ -454,28 +462,29 @@ nav {
 }
 
 button {
-	background: var(--secondary);
-	border: 0;
-	border-radius: 5px;
-	color: var(--primary);
-	cursor: pointer;
-	font-size: 1vw;
-	font-weight: 600;
-	margin-bottom: 30px;
-	padding: 5px 10px;	
+  background: var(--secondary);
+  border: 0;
+  border-radius: 5px;
+  color: var(--primary);
+  cursor: pointer;
+  font-size: 1vw;
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding: 5px 10px;
 }
 
 .avatar {
   padding: 20px;
   border: none;
 }
+
 a {
-	border-radius: 5px;
-	color: var(--primary);
-	font-weight: 600;
-	padding: 2px 4px;
-	margin-left: -2px;
-	margin-right: -2px;
+  border-radius: 5px;
+  color: var(--primary);
+  font-weight: 600;
+  padding: 2px 4px;
+  margin-left: -2px;
+  margin-right: -2px;
 }
 
 .navActive {
@@ -497,14 +506,14 @@ a {
 
 footer {
   display: flex;
-  justify-content:space-evenly;
-  
+  justify-content: space-evenly;
+
   margin-top: 3%;
-  background-color:#cccccc;
+  background-color: #cccccc;
 }
 
 .footer-info {
-  display:block;
+  display: block;
   justify-content: flex-start;
 }
 
@@ -533,10 +542,12 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .icon-img {
-  
+
   align-items: center;
 }
+
 .sep-icon-section {
   display: flex;
   justify-content: center;
@@ -553,13 +564,15 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .projectName h1{
+  .projectName h1 {
     font-size: 6vw;
   }
+
   .about {
     display: block;
     text-align: center;
   }
+
   textarea {
     width: 100%;
   }
@@ -568,12 +581,6 @@ footer {
     margin: 0;
   }
 
-  nav {
-    padding: 5%;
-  }
-  nav a {
-    font-size: 4vw;
-  }
 
   .skillset {
     font-size: 3vw;
@@ -588,13 +595,8 @@ footer {
     margin: 2%
   }
 
-  .initials {
-    font-size: 6vw;
-    margin: 5%
-  }
-
   .email-link {
-    display:block;
+    display: block;
   }
 
   .email-link p {
@@ -651,9 +653,42 @@ footer {
     font-size: 3vw
   }
 
+
+}
+
+@media screen and (max-width: 520px) and (min-width: 768px) {
   .content h1 {
     font-size: 8vw
   }
+
+  .content h4 {
+    font-size: 4vw
+  }
+
+  nav {
+    padding: 5%;
+  }
+
+  nav a {
+    font-size: 4vw;
+  }
+
+  .initials {
+    margin: 0;
+    padding: 0
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .initials {
+    margin: 5%;
+    font-size: 6vw
+  } 
+
+  .content h1 {
+    font-size: 8vw
+  }
+
   .content h4 {
     font-size: 4vw
   }
@@ -662,5 +697,18 @@ footer {
 @media screen and (min-width: 960px) {
   .projectName {
     font-size: 1.7vw;
+  }
+
+  .content {
+    max-height: 50%
+  }
+
+  .content h1 {
+    font-size: 5vw
+  }
+
+  .initials {
+    font-size: 3vw;
+    padding: 1%
   }
 }

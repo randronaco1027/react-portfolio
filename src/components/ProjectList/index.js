@@ -61,8 +61,8 @@ function Projects() {
                 <button onClick={() => window.open(`${project.application}`, "_blank")}>Application</button>
               </div>
               <div className='skillset'>
-                <p className="m-1">* {project.description}</p>
-                <p>* {project.skillset}</p>
+                <p className="m-1">{project.description}</p>
+                <p className='skill'>{project.skillset}</p>
               </div>
             </div>
           </div>

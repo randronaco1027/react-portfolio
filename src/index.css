@@ -563,6 +563,10 @@ footer {
   font-size: 1.5vw
 }
 
+.skill {
+  font-style: italic
+}
+
 @media screen and (max-width: 768px) {
   .projectName h1 {
     font-size: 6vw;

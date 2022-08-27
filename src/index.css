@@ -17,9 +17,9 @@ main {
 }
 
 :root {
-  --primary: #F7E733;
+  --primary: #FB8B24;
   --secondary: #2B2D42;
-  --tertiary: #41E2BA
+  --tertiary: #B9C6AE
 }
 
 * {
@@ -250,6 +250,12 @@ textarea {
   vertical-align: center;
   margin: 1%;
   padding: 1%
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .contact-form {
@@ -596,7 +602,8 @@ footer {
   }
 
   .projectBtn {
-    margin: 2%
+    margin: 1%;
+    padding: 0;
   }
 
   .email-link {
@@ -646,7 +653,7 @@ footer {
   }
 
   .projectBtn button {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 
   .home {

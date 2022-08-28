@@ -55,7 +55,7 @@ function Resume() {
         }
     ])
     return (
-        <section className="my-5">
+        <section className="my-5  fade-in-effect">
             {/* Icons of all softwares learned in course */}
             <h1 className="languageTitle">Technical Proficiencies</h1>
             <div className='icon-section m-3'>

@@ -51,7 +51,7 @@ function ContactForm() {
 
   return (
     // Contact Form
-    <section className="contact-form my-5">
+    <section className="contact-form my-5  fade-in-effect">
       <h1 data-testid="h1tag">Contact me</h1>
       <div className="contact-section">
         <div className='form'>

@@ -3,7 +3,7 @@ import React from 'react';
 // About page, this is the landing page
 function About() {
   return (
-    <div className="about">
+    <div className="about fade-in-effect">
       <section className="my-5" >
         <h1 id="about">About me</h1>
         <div className="my-2 px-4">

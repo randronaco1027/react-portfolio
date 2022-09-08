@@ -9,7 +9,7 @@ function Resume() {
             name: 'Bootstrap',
         },
         {
-            name: 'CSS',
+            name: 'Python',
         },
         {
             name: 'GraphQL',
@@ -27,10 +27,10 @@ function Resume() {
             name: 'node.js',
         },
         {
-            name: 'react',
+            name: 'react'
         },
         {
-            name: 'SQL',
+            name: 'CSS',
         },
         {
             name: 'sequelize',
@@ -52,6 +52,9 @@ function Resume() {
         },
         {
             name: 'git'
+        },
+        {
+            name: 'MySQL',
         }
     ])
     return (
